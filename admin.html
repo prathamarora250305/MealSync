@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealSync - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="header-container">
+
+            <h1>MealSync Admin</h1>
+
+            <nav>
+
+                <a href="admin.html">Dashboard</a>
+                <a href="admin-menu.html">Menu</a>
+                <a href="food-waste.html">Food Waste</a>
+                <a href="meal-demand.html">Meal Demand</a>
+                <a href="hygiene.html">Hygiene</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="index.html">Student View</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+
+        <!-- Page Header -->
+
+        <section class="admin-welcome">
+
+            <div>
+
+                <p class="small-heading">
+                    ADMINISTRATION
+                </p>
+
+                <h2>Mess Overview</h2>
+
+                <p>
+                    Monitor today's meals, student activity,
+                    food waste and mess performance.
+                </p>
+
+            </div>
+
+            <div class="admin-date">
+
+                <span>Today</span>
+
+                <strong>
+                    23 August 2026
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main Stats -->
+
+        <section>
+
+            <div class="admin-stat-grid">
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        👨‍🎓
+                    </div>
+
+                    <div>
+
+                        <p>Total Students</p>
+
+                        <h3>450</h3>
+
+                        <span>
+                            Registered students
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        🍽️
+                    </div>
+
+                    <div>
+
+                        <p>Today's Attendance</p>
+
+                        <h3>384</h3>
+
+                        <span class="positive">
+                            85% attendance
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        ⭐
+                    </div>
+
+                    <div>
+
+                        <p>Student Satisfaction</p>
+
+                        <h3>4.2/5</h3>
+
+                        <span class="positive">
+                            +6% this week
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        ♻️
+                    </div>
+
+                    <div>
+
+                        <p>Food Waste</p>
+
+                        <h3>14.2 KG</h3>
+
+                        <span class="negative">
+                            Needs attention
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Performance Score + Meal Status -->
+
+        <section>
+
+            <div class="admin-two-column">
+
+
+                <!-- Performance -->
+
+                <article class="performance-card">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-heading">
+                                OVERALL PERFORMANCE
+                            </p>
+
+                            <h2>MealSync Score</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-display">
+
+                        <div class="score-circle">
+                            <span>82</span>
+                            <small>/100</small>
+                        </div>
+
+                        <div>
+
+                            <h3>Good Performance</h3>
+
+                            <p>
+                                The mess is performing better
+                                than last week's average.
+                            </p>
+
+                            <span class="positive">
+                                ↑ 6% improvement
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Today's Meal Status -->
+
+                <article class="meal-status-card">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-heading">
+                                TODAY
+                            </p>
+
+                            <h2>Meal Status</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-meal-row">
+
+                        <span class="meal-symbol">
+                            🌅
+                        </span>
+
+                        <div>
+
+                            <h3>Breakfast</h3>
+
+                            <p>
+                                372 / 390 students
+                            </p>
+
+                        </div>
+
+                        <span class="completed-status">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <div class="admin-meal-row">
+
+                        <span class="meal-symbol">
+                            ☀️
+                        </span>
+
+                        <div>
+
+                            <h3>Lunch</h3>
+
+                            <p>
+                                384 / 420 students
+                            </p>
+
+                        </div>
+
+                        <span class="completed-status">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <div class="admin-meal-row">
+
+                        <span class="meal-symbol">
+                            🌙
+                        </span>
+
+                        <div>
+
+                            <h3>Dinner</h3>
+
+                            <p>
+                                Expected: 430
+                            </p>
+
+                        </div>
+
+                        <span class="upcoming-status">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Feedback + Complaints -->
+
+        <section>
+
+            <div class="admin-two-column">
+
+
+                <!-- Feedback -->
+
+                <article class="admin-panel">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-heading">
+                                STUDENT FEEDBACK
+                            </p>
+
+                            <h2>Feedback Summary</h2>
+
+                        </div>
+
+                        <a href="feedback.html"
+                           class="view-link">
+                            View →
+                        </a>
+
+                    </div>
+
+
+                    <div class="feedback-metric">
+
+                        <span>Taste</span>
+
+                        <div class="metric-bar">
+
+                            <div
+                                class="metric-fill"
+                                style="width: 86%;">
+                            </div>
+
+                        </div>
+
+                        <strong>4.3</strong>
+
+                    </div>
+
+
+                    <div class="feedback-metric">
+
+                        <span>Quality</span>
+
+                        <div class="metric-bar">
+
+                            <div
+                                class="metric-fill"
+                                style="width: 80%;">
+                            </div>
+
+                        </div>
+
+                        <strong>4.0</strong>
+
+                    </div>
+
+
+                    <div class="feedback-metric">
+
+                        <span>Quantity</span>
+
+                        <div class="metric-bar">
+
+                            <div
+                                class="metric-fill"
+                                style="width: 76%;">
+                            </div>
+
+                        </div>
+
+                        <strong>3.8</strong>
+
+                    </div>
+
+
+                    <div class="feedback-metric">
+
+                        <span>Hygiene</span>
+
+                        <div class="metric-bar">
+
+                            <div
+                                class="metric-fill"
+                                style="width: 84%;">
+                            </div>
+
+                        </div>
+
+                        <strong>4.2</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Complaints -->
+
+                <article class="admin-panel">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-heading">
+                                SUPPORT
+                            </p>
+
+                            <h2>Complaints</h2>
+
+                        </div>
+
+                        <a href="complaints.html"
+                           class="view-link">
+                            View →
+                        </a>
+
+                    </div>
+
+
+                    <div class="complaint-stats">
+
+                        <div>
+
+                            <span>8</span>
+
+                            <p>Pending</p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>5</span>
+
+                            <p>Under Review</p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>32</span>
+
+                            <p>Resolved</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-alert">
+
+                        <span>⚠️</span>
+
+                        <p>
+                            8 complaints need attention.
+                            Food quantity is currently the
+                            most reported issue.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Food Waste + Demand -->
+
+        <section>
+
+            <div class="admin-two-column">
+
+
+                <!-- Food Waste -->
+
+                <article class="admin-panel">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-heading">
+                                SUSTAINABILITY
+                            </p>
+
+                            <h2>Food Waste</h2>
+
+                        </div>
+
+                        <a href="food-waste.html"
+                           class="view-link">
+                            Details →
+                        </a>
+
+                    </div>
+
+
+                    <div class="waste-highlight">
+
+                        <div>
+
+                            <span>
+                                Today's Waste
+                            </span>
+
+                            <h3>
+                                14.2 KG
+                            </h3>
+
+                        </div>
+
+                        <span class="waste-percentage">
+                            13.5%
+                        </span>
+
+                    </div>
+
+
+                    <p class="panel-description">
+                        Lunch generated the highest amount
+                        of waste today.
+                    </p>
+
+                </article>
+
+
+                <!-- Meal Demand -->
+
+                <article class="admin-panel">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="small-heading">
+                                PREPARATION
+                            </p>
+
+                            <h2>Meal Demand</h2>
+
+                        </div>
+
+                        <a href="meal-demand.html"
+                           class="view-link">
+                            Details →
+                        </a>
+
+                    </div>
+
+
+                    <div class="demand-highlight">
+
+                        <div>
+
+                            <span>
+                                Expected Students
+                            </span>
+
+                            <h3>
+                                384
+                            </h3>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Recommended
+                            </span>
+
+                            <h3>
+                                105 KG
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="panel-description">
+                        Current demand estimate is based on
+                        today's attendance.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        MANAGEMENT
+                    </p>
+
+                    <h2>Quick Actions</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-actions">
+
+
+                <a href="admin-menu.html"
+                   class="admin-action">
+
+                    <span>🍽️</span>
+
+                    <div>
+
+                        <h3>Update Menu</h3>
+
+                        <p>
+                            Add or modify meals
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="food-waste.html"
+                   class="admin-action">
+
+                    <span>♻️</span>
+
+                    <div>
+
+                        <h3>Record Waste</h3>
+
+                        <p>
+                            Add today's waste data
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="meal-demand.html"
+                   class="admin-action">
+
+                    <span>📊</span>
+
+                    <div>
+
+                        <h3>Check Demand</h3>
+
+                        <p>
+                            Estimate food requirements
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="hygiene.html"
+                   class="admin-action">
+
+                    <span>🧼</span>
+
+                    <div>
+
+                        <h3>Hygiene Audit</h3>
+
+                        <p>
+                            Complete daily checklist
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Activity -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        SYSTEM ACTIVITY
+                    </p>
+
+                    <h2>Recent Activity</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-activity-list">
+
+
+                <div class="admin-activity-item">
+
+                    <span>⭐</span>
+
+                    <div>
+
+                        <h3>
+                            New feedback received
+                        </h3>
+
+                        <p>
+                            Lunch received an average rating
+                            of 4.3/5.
+                        </p>
+
+                    </div>
+
+                    <time>
+                        10 min ago
+                    </time>
+
+                </div>
+
+
+                <div class="admin-activity-item">
+
+                    <span>♻️</span>
+
+                    <div>
+
+                        <h3>
+                            Food waste recorded
+                        </h3>
+
+                        <p>
+                            6.8 KG waste recorded for lunch.
+                        </p>
+
+                    </div>
+
+                    <time>
+                        35 min ago
+                    </time>
+
+                </div>
+
+
+                <div class="admin-activity-item">
+
+                    <span>📋</span>
+
+                    <div>
+
+                        <h3>
+                            New complaint received
+                        </h3>
+
+                        <p>
+                            A food quantity complaint needs review.
+                        </p>
+
+                    </div>
+
+                    <time>
+                        1 hour ago
+                    </time>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MealSync Admin. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

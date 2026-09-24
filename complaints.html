@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealSync - Complaints</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="header-container">
+
+            <h1>MealSync</h1>
+
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="menu.html">Menu</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="activity.html">Activity</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <p class="small-heading">HELP & SUPPORT</p>
+
+            <h2>Complaints & Suggestions</h2>
+
+            <p>
+                Report a mess-related issue and track its resolution.
+            </p>
+
+        </section>
+
+
+        <!-- Complaint Form -->
+        <section class="complaint-form-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">REPORT AN ISSUE</p>
+
+                    <h2>Raise a Complaint</h2>
+
+                </div>
+
+                <span class="complaint-info-badge">
+                    We're here to help
+                </span>
+
+            </div>
+
+
+            <form>
+
+                <!-- Category -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        What is the issue about?
+                    </label>
+
+                    <select id="category" name="category">
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option value="food-quality">
+                            Food Quality
+                        </option>
+
+                        <option value="food-taste">
+                            Food Taste
+                        </option>
+
+                        <option value="quantity">
+                            Food Quantity
+                        </option>
+
+                        <option value="hygiene">
+                            Hygiene
+                        </option>
+
+                        <option value="timing">
+                            Mess Timing
+                        </option>
+
+                        <option value="staff">
+                            Staff Behaviour
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Meal -->
+
+                <div class="form-group">
+
+                    <label for="meal">
+                        Which meal is related to the issue?
+                    </label>
+
+                    <select id="meal" name="meal">
+
+                        <option value="">
+                            Select a meal
+                        </option>
+
+                        <option value="breakfast">
+                            Breakfast
+                        </option>
+
+                        <option value="lunch">
+                            Lunch
+                        </option>
+
+                        <option value="snacks">
+                            Snacks
+                        </option>
+
+                        <option value="dinner">
+                            Dinner
+                        </option>
+
+                        <option value="general">
+                            General / Not Meal Specific
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Priority -->
+
+                <div class="form-group">
+
+                    <label for="priority">
+                        How urgent is the issue?
+                    </label>
+
+                    <div class="priority-options">
+
+                        <label class="priority-option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="low">
+
+                            <span>
+
+                                <strong>Low</strong>
+
+                                <small>
+                                    Can be addressed later
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="priority-option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="medium">
+
+                            <span>
+
+                                <strong>Medium</strong>
+
+                                <small>
+                                    Needs attention
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="priority-option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="high">
+
+                            <span>
+
+                                <strong>High</strong>
+
+                                <small>
+                                    Needs immediate attention
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Description -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Describe the issue
+                    </label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="6"
+                        placeholder="Please describe the problem clearly..."></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="submit-button">
+
+                    Submit Complaint
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Complaint Status -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">TRACKING</p>
+
+                    <h2>My Complaints</h2>
+
+                </div>
+
+                <span class="complaint-count">
+                    3 Total
+                </span>
+
+            </div>
+
+
+            <div class="complaint-list">
+
+
+                <!-- Complaint 1 -->
+
+                <article class="complaint-card">
+
+                    <div class="complaint-card-top">
+
+                        <div>
+
+                            <span class="complaint-category">
+                                Food Quantity
+                            </span>
+
+                            <h3>
+                                Lunch quantity was insufficient
+                            </h3>
+
+                        </div>
+
+                        <span class="status-review">
+                            Under Review
+                        </span>
+
+                    </div>
+
+
+                    <p class="complaint-description">
+
+                        Lunch quantity was insufficient and many
+                        students had to wait for additional servings.
+
+                    </p>
+
+
+                    <div class="complaint-meta">
+
+                        <span>
+                            📅 22 August 2026
+                        </span>
+
+                        <span>
+                            ID: #MS1024
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Complaint 2 -->
+
+                <article class="complaint-card">
+
+                    <div class="complaint-card-top">
+
+                        <div>
+
+                            <span class="complaint-category">
+                                Hygiene
+                            </span>
+
+                            <h3>
+                                Dining area needs better cleaning
+                            </h3>
+
+                        </div>
+
+                        <span class="status-resolved">
+                            Resolved
+                        </span>
+
+                    </div>
+
+
+                    <p class="complaint-description">
+
+                        Dining tables were not cleaned properly
+                        during the evening meal.
+
+                    </p>
+
+
+                    <div class="complaint-meta">
+
+                        <span>
+                            📅 20 August 2026
+                        </span>
+
+                        <span>
+                            ID: #MS1019
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Complaint 3 -->
+
+                <article class="complaint-card">
+
+                    <div class="complaint-card-top">
+
+                        <div>
+
+                            <span class="complaint-category">
+                                Mess Timing
+                            </span>
+
+                            <h3>
+                                Dinner counter closed early
+                            </h3>
+
+                        </div>
+
+                        <span class="status-resolved">
+                            Resolved
+                        </span>
+
+                    </div>
+
+
+                    <p class="complaint-description">
+
+                        Dinner counter was closed before the
+                        scheduled closing time.
+
+                    </p>
+
+
+                    <div class="complaint-meta">
+
+                        <span>
+                            📅 18 August 2026
+                        </span>
+
+                        <span>
+                            ID: #MS1007
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Complaint Process -->
+
+        <section class="complaint-process">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        HOW IT WORKS
+                    </p>
+
+                    <h2>Complaint Resolution Process</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="process-steps">
+
+                <div class="process-step">
+
+                    <span class="step-number">1</span>
+
+                    <div>
+
+                        <h3>Submit</h3>
+
+                        <p>
+                            Tell us about the problem.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <span class="step-number">2</span>
+
+                    <div>
+
+                        <h3>Review</h3>
+
+                        <p>
+                            Mess administration reviews it.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <span class="step-number">3</span>
+
+                    <div>
+
+                        <h3>Action</h3>
+
+                        <p>
+                            The issue is assigned for resolution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <span class="step-number">4</span>
+
+                    <div>
+
+                        <h3>Resolved</h3>
+
+                        <p>
+                            You can track the final status.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MealSync. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

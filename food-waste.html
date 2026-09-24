@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealSync - Food Waste</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="header-container">
+
+            <h1>MealSync Admin</h1>
+
+            <nav>
+
+                <a href="admin.html">Dashboard</a>
+                <a href="admin-menu.html">Menu</a>
+                <a href="food-waste.html">Food Waste</a>
+                <a href="meal-demand.html">Meal Demand</a>
+                <a href="hygiene.html">Hygiene</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="index.html">Student View</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <p class="small-heading">
+                SUSTAINABILITY
+            </p>
+
+            <h2>Food Waste Management</h2>
+
+            <p>
+                Track food waste, identify patterns and reduce unnecessary preparation.
+            </p>
+
+        </section>
+
+
+        <!-- Waste Overview -->
+
+        <section>
+
+            <div class="admin-stat-grid">
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        ♻️
+                    </div>
+
+                    <div>
+
+                        <p>Today's Waste</p>
+
+                        <h3>14.2 KG</h3>
+
+                        <span class="negative">
+                            +2.1 KG vs yesterday
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        📊
+                    </div>
+
+                    <div>
+
+                        <p>Weekly Waste</p>
+
+                        <h3>86.4 KG</h3>
+
+                        <span class="positive">
+                            -8% vs last week
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        🍽️
+                    </div>
+
+                    <div>
+
+                        <p>Waste Per Student</p>
+
+                        <h3>31.5 G</h3>
+
+                        <span>
+                            Today's average
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <p>Waste Target</p>
+
+                        <h3>20 G</h3>
+
+                        <span class="negative">
+                            Above target
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Record Waste -->
+
+        <section class="waste-record-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        DAILY ENTRY
+                    </p>
+
+                    <h2>Record Food Waste</h2>
+
+                </div>
+
+            </div>
+
+
+            <form class="waste-form">
+
+
+                <div class="editor-field">
+
+                    <label for="waste-date">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="waste-date"
+                        name="waste-date">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="waste-meal">
+                        Meal
+                    </label>
+
+                    <select
+                        id="waste-meal"
+                        name="waste-meal">
+
+                        <option value="">
+                            Select meal
+                        </option>
+
+                        <option>
+                            Breakfast
+                        </option>
+
+                        <option>
+                            Lunch
+                        </option>
+
+                        <option>
+                            Snacks
+                        </option>
+
+                        <option>
+                            Dinner
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="prepared">
+                        Food Prepared (KG)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="prepared"
+                        name="prepared"
+                        placeholder="e.g. 105">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="served">
+                        Food Served (KG)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="served"
+                        name="served"
+                        placeholder="e.g. 96">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="wasted">
+                        Food Wasted (KG)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="wasted"
+                        name="wasted"
+                        placeholder="e.g. 9">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="reason">
+                        Main Reason
+                    </label>
+
+                    <select
+                        id="reason"
+                        name="reason">
+
+                        <option value="">
+                            Select reason
+                        </option>
+
+                        <option>
+                            Low Attendance
+                        </option>
+
+                        <option>
+                            Over Preparation
+                        </option>
+
+                        <option>
+                            Food Quality
+                        </option>
+
+                        <option>
+                            Taste Preference
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="editor-field full-width">
+
+                    <label for="waste-notes">
+                        Additional Notes
+                    </label>
+
+                    <textarea
+                        id="waste-notes"
+                        name="waste-notes"
+                        rows="3"
+                        placeholder="Add observations about today's waste..."></textarea>
+
+                </div>
+
+
+                <div class="editor-actions">
+
+                    <button
+                        type="reset"
+                        class="secondary-button">
+
+                        Clear
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="submit-button">
+
+                        Save Waste Record
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Today's Breakdown -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        TODAY
+                    </p>
+
+                    <h2>Meal-wise Waste</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="waste-breakdown-grid">
+
+
+                <article class="waste-meal-card">
+
+                    <div class="waste-meal-header">
+
+                        <div>
+
+                            <span>🌅</span>
+
+                            <h3>Breakfast</h3>
+
+                        </div>
+
+                        <strong>
+                            2.4 KG
+                        </strong>
+
+                    </div>
+
+                    <div class="waste-progress">
+
+                        <div
+                            style="width: 32%;">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        32% of today's total waste
+                    </p>
+
+                </article>
+
+
+                <article class="waste-meal-card">
+
+                    <div class="waste-meal-header">
+
+                        <div>
+
+                            <span>☀️</span>
+
+                            <h3>Lunch</h3>
+
+                        </div>
+
+                        <strong>
+                            6.8 KG
+                        </strong>
+
+                    </div>
+
+                    <div class="waste-progress">
+
+                        <div
+                            style="width: 78%;">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Highest waste meal today
+                    </p>
+
+                </article>
+
+
+                <article class="waste-meal-card">
+
+                    <div class="waste-meal-header">
+
+                        <div>
+
+                            <span>☕</span>
+
+                            <h3>Snacks</h3>
+
+                        </div>
+
+                        <strong>
+                            1.2 KG
+                        </strong>
+
+                    </div>
+
+                    <div class="waste-progress">
+
+                        <div
+                            style="width: 18%;">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Low waste level
+                    </p>
+
+                </article>
+
+
+                <article class="waste-meal-card">
+
+                    <div class="waste-meal-header">
+
+                        <div>
+
+                            <span>🌙</span>
+
+                            <h3>Dinner</h3>
+
+                        </div>
+
+                        <strong>
+                            3.8 KG
+                        </strong>
+
+                    </div>
+
+                    <div class="waste-progress">
+
+                        <div
+                            style="width: 44%;">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Within acceptable range
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Waste Trend -->
+
+        <section class="waste-trend-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        LAST 7 DAYS
+                    </p>
+
+                    <h2>Waste Trend</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="waste-chart">
+
+                <div class="chart-row">
+
+                    <span>Mon</span>
+
+                    <div class="chart-track">
+                        <div style="width: 60%;"></div>
+                    </div>
+
+                    <strong>11.2 KG</strong>
+
+                </div>
+
+
+                <div class="chart-row">
+
+                    <span>Tue</span>
+
+                    <div class="chart-track">
+                        <div style="width: 72%;"></div>
+                    </div>
+
+                    <strong>13.4 KG</strong>
+
+                </div>
+
+
+                <div class="chart-row">
+
+                    <span>Wed</span>
+
+                    <div class="chart-track">
+                        <div style="width: 48%;"></div>
+                    </div>
+
+                    <strong>9.1 KG</strong>
+
+                </div>
+
+
+                <div class="chart-row">
+
+                    <span>Thu</span>
+
+                    <div class="chart-track">
+                        <div style="width: 65%;"></div>
+                    </div>
+
+                    <strong>12.2 KG</strong>
+
+                </div>
+
+
+                <div class="chart-row">
+
+                    <span>Fri</span>
+
+                    <div class="chart-track">
+                        <div style="width: 54%;"></div>
+                    </div>
+
+                    <strong>10.3 KG</strong>
+
+                </div>
+
+
+                <div class="chart-row">
+
+                    <span>Sat</span>
+
+                    <div class="chart-track">
+                        <div style="width: 82%;"></div>
+                    </div>
+
+                    <strong>15.5 KG</strong>
+
+                </div>
+
+
+                <div class="chart-row">
+
+                    <span>Sun</span>
+
+                    <div class="chart-track">
+                        <div style="width: 75%;"></div>
+                    </div>
+
+                    <strong>14.2 KG</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Insight -->
+
+        <section class="waste-insight">
+
+            <div class="waste-insight-icon">
+                💡
+            </div>
+
+            <div>
+
+                <p class="small-heading">
+                    MEALSYNC INSIGHT
+                </p>
+
+                <h2>
+                    Lunch needs attention
+                </h2>
+
+                <p>
+                    Lunch is generating the highest food waste.
+                    Compare today's attendance with the prepared
+                    quantity before tomorrow's lunch preparation.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MealSync Admin. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

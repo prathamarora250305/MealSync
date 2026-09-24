@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealSync - Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="header-container">
+
+            <h1>MealSync</h1>
+
+            <nav>
+
+                <a href="index.html">Dashboard</a>
+                <a href="menu.html">Menu</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="activity.html">Activity</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="profile.html">Profile</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Welcome -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <p class="small-heading">
+                    STUDENT DASHBOARD
+                </p>
+
+                <h2>
+                    Good Morning, Student! 👋
+                </h2>
+
+                <p>
+                    Here's what's happening with your meals today.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dashboard Cards -->
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-cards">
+
+
+                <!-- Today's Meal -->
+
+                <article class="dashboard-card">
+
+                    <p class="card-label">
+                        TODAY'S MEAL
+                    </p>
+
+                    <h3>
+                        🍛 Lunch
+                    </h3>
+
+                    <p>
+                        Dal, Rice, Roti & Paneer
+                    </p>
+
+                    <p class="card-time">
+                        12:30 PM - 2:30 PM
+                    </p>
+
+                </article>
+
+
+                <!-- Next Meal -->
+
+                <article class="dashboard-card">
+
+                    <p class="card-label">
+                        NEXT MEAL
+                    </p>
+
+                    <h3>
+                        🍽️ Dinner
+                    </h3>
+
+                    <p>
+                        Dal, Roti, Rice & Vegetable
+                    </p>
+
+                    <p class="card-time">
+                        7:30 PM - 9:30 PM
+                    </p>
+
+                </article>
+
+
+                <!-- MealSync Score -->
+
+                <article class="dashboard-card score-card">
+
+                    <p class="card-label">
+                        MEALSYNC SCORE
+                    </p>
+
+                    <h3>
+                        ⭐ 4.2 / 5
+                    </h3>
+
+                    <p>
+                        Student satisfaction this week
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Today's Menu -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        TODAY
+                    </p>
+
+                    <h2>
+                        Today's Menu
+                    </h2>
+
+                </div>
+
+                <a href="menu.html" class="view-link">
+                    View Full Menu →
+                </a>
+
+            </div>
+
+
+            <div class="menu-cards">
+
+
+                <!-- Breakfast -->
+
+                <article class="menu-card meal-action-card">
+
+                    <p class="meal-time">
+                        8:00 AM - 10:00 AM
+                    </p>
+
+                    <h3>
+                        🌅 Breakfast
+                    </h3>
+
+                    <p>
+                        Poha, Tea & Banana
+                    </p>
+
+                    <div class="meal-response">
+
+                        <button
+                            type="button"
+                            class="meal-button having-button"
+                            data-meal="breakfast"
+                            data-status="having">
+
+                            ✓ Having
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="meal-button skip-button"
+                            data-meal="breakfast"
+                            data-status="skipping">
+
+                            Skip
+
+                        </button>
+
+                    </div>
+
+                    <p
+                        class="meal-response-status"
+                        id="breakfast-status">
+
+                    </p>
+
+                </article>
+
+
+                <!-- Lunch -->
+
+                <article class="menu-card meal-action-card">
+
+                    <p class="meal-time">
+                        12:30 PM - 2:30 PM
+                    </p>
+
+                    <h3>
+                        ☀️ Lunch
+                    </h3>
+
+                    <p>
+                        Dal, Rice, Roti, Mix Veg & Paneer
+                    </p>
+
+                    <div class="meal-response">
+
+                        <button
+                            type="button"
+                            class="meal-button having-button"
+                            data-meal="lunch"
+                            data-status="having">
+
+                            ✓ Having
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="meal-button skip-button"
+                            data-meal="lunch"
+                            data-status="skipping">
+
+                            Skip
+
+                        </button>
+
+                    </div>
+
+                    <p
+                        class="meal-response-status"
+                        id="lunch-status">
+
+                    </p>
+
+                </article>
+
+
+                <!-- Dinner -->
+
+                <article class="menu-card meal-action-card">
+
+                    <p class="meal-time">
+                        7:30 PM - 9:30 PM
+                    </p>
+
+                    <h3>
+                        🌙 Dinner
+                    </h3>
+
+                    <p>
+                        Dal, Roti, Rice & Vegetable
+                    </p>
+
+                    <div class="meal-response">
+
+                        <button
+                            type="button"
+                            class="meal-button having-button"
+                            data-meal="dinner"
+                            data-status="having">
+
+                            ✓ Having
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="meal-button skip-button"
+                            data-meal="dinner"
+                            data-status="skipping">
+
+                            Skip
+
+                        </button>
+
+                    </div>
+
+                    <p
+                        class="meal-response-status"
+                        id="dinner-status">
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        QUICK ACCESS
+                    </p>
+
+                    <h2>
+                        What would you like to do?
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a href="attendance.html" class="action-card">
+
+                    <span class="action-icon">
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Mark Attendance
+                        </h3>
+
+                        <p>
+                            Tell us if you're having today's meal.
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="feedback.html" class="action-card">
+
+                    <span class="action-icon">
+                        ★
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Give Feedback
+                        </h3>
+
+                        <p>
+                            Share your meal experience.
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="complaints.html" class="action-card">
+
+                    <span class="action-icon">
+                        !
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Raise a Complaint
+                        </h3>
+
+                        <p>
+                            Report a mess-related issue.
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Announcement -->
+
+        <section class="announcement-section">
+
+            <div class="announcement-content">
+
+                <div class="announcement-icon">
+                    📢
+                </div>
+
+                <div>
+
+                    <p class="small-heading">
+                        LATEST ANNOUNCEMENT
+                    </p>
+
+                    <h3>
+                        Dinner timing changed today
+                    </h3>
+
+                    <p>
+                        Dinner will be served from 7:30 PM to 9:30 PM
+                        due to maintenance work.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a
+                href="announcements.html"
+                class="view-link">
+
+                View All →
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MealSync. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

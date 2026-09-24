@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealSync - Meal Demand</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="header-container">
+
+            <h1>MealSync Admin</h1>
+
+            <nav>
+
+                <a href="admin.html">Dashboard</a>
+                <a href="admin-menu.html">Menu</a>
+                <a href="food-waste.html">Food Waste</a>
+                <a href="meal-demand.html">Meal Demand</a>
+                <a href="hygiene.html">Hygiene</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="index.html">Student View</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <p class="small-heading">
+                SMART PREPARATION
+            </p>
+
+            <h2>Meal Demand</h2>
+
+            <p>
+                Estimate meal requirements using student attendance and previous data.
+            </p>
+
+        </section>
+
+
+        <!-- Demand Overview -->
+
+        <section>
+
+            <div class="admin-stat-grid">
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        👨‍🎓
+                    </div>
+
+                    <div>
+
+                        <p>Registered Students</p>
+
+                        <h3>450</h3>
+
+                        <span>
+                            Active today
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        🍽️
+                    </div>
+
+                    <div>
+
+                        <p>Expected Attendance</p>
+
+                        <h3>384</h3>
+
+                        <span class="positive">
+                            85.3%
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        📦
+                    </div>
+
+                    <div>
+
+                        <p>Recommended Food</p>
+
+                        <h3>105 KG</h3>
+
+                        <span>
+                            For today's lunch
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <p>Prediction Accuracy</p>
+
+                        <h3>91%</h3>
+
+                        <span class="positive">
+                            This month
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Demand Calculator -->
+
+        <section class="demand-calculator-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        PREPARATION PLANNER
+                    </p>
+
+                    <h2>Calculate Meal Requirement</h2>
+
+                </div>
+
+            </div>
+
+
+            <form class="demand-form">
+
+
+                <div class="editor-field">
+
+                    <label for="demand-date">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="demand-date"
+                        name="demand-date">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="demand-meal">
+                        Meal
+                    </label>
+
+                    <select
+                        id="demand-meal"
+                        name="demand-meal">
+
+                        <option value="">
+                            Select meal
+                        </option>
+
+                        <option>
+                            Breakfast
+                        </option>
+
+                        <option>
+                            Lunch
+                        </option>
+
+                        <option>
+                            Snacks
+                        </option>
+
+                        <option>
+                            Dinner
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="registered">
+                        Total Students
+                    </label>
+
+                    <input
+                        type="number"
+                        id="registered"
+                        name="registered"
+                        value="450">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="attendance">
+                        Expected Attendance
+                    </label>
+
+                    <input
+                        type="number"
+                        id="attendance"
+                        name="attendance"
+                        placeholder="e.g. 384">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="avg-serving">
+                        Average Serving (KG)
+                    </label>
+
+                    <input
+                        type="number"
+                        step="0.01"
+                        id="avg-serving"
+                        name="avg-serving"
+                        placeholder="e.g. 0.25">
+
+                </div>
+
+
+                <div class="editor-field">
+
+                    <label for="buffer">
+                        Safety Buffer
+                    </label>
+
+                    <select
+                        id="buffer"
+                        name="buffer">
+
+                        <option>
+                            3%
+                        </option>
+
+                        <option selected>
+                            5%
+                        </option>
+
+                        <option>
+                            8%
+                        </option>
+
+                        <option>
+                            10%
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="editor-actions">
+
+                    <button
+                        type="reset"
+                        class="secondary-button">
+
+                        Reset
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="submit-button">
+
+                        Calculate Requirement
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Recommendation -->
+
+        <section class="demand-recommendation">
+
+            <div class="recommendation-icon">
+                🎯
+            </div>
+
+            <div class="recommendation-content">
+
+                <p class="small-heading">
+                    CURRENT RECOMMENDATION
+                </p>
+
+                <h2>
+                    Prepare approximately 105 KG
+                </h2>
+
+                <p>
+                    Based on 384 expected students and a
+                    5% safety buffer.
+                </p>
+
+            </div>
+
+            <div class="recommendation-number">
+
+                <span>
+                    Expected
+                </span>
+
+                <strong>
+                    384
+                </strong>
+
+                <small>
+                    students
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- Today's Demand -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        TODAY'S FORECAST
+                    </p>
+
+                    <h2>Meal-wise Demand</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="demand-table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Meal</th>
+                            <th>Expected</th>
+                            <th>Recommended</th>
+                            <th>Prepared</th>
+                            <th>Difference</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>
+                                🌅 Breakfast
+                            </td>
+
+                            <td>
+                                372
+                            </td>
+
+                            <td>
+                                101 KG
+                            </td>
+
+                            <td>
+                                103 KG
+                            </td>
+
+                            <td>
+                                +2 KG
+                            </td>
+
+                            <td>
+
+                                <span class="demand-status-good">
+                                    Good
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                ☀️ Lunch
+                            </td>
+
+                            <td>
+                                384
+                            </td>
+
+                            <td>
+                                105 KG
+                            </td>
+
+                            <td>
+                                112 KG
+                            </td>
+
+                            <td>
+                                +7 KG
+                            </td>
+
+                            <td>
+
+                                <span class="demand-status-warning">
+                                    High
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                ☕ Snacks
+                            </td>
+
+                            <td>
+                                310
+                            </td>
+
+                            <td>
+                                48 KG
+                            </td>
+
+                            <td>
+                                50 KG
+                            </td>
+
+                            <td>
+                                +2 KG
+                            </td>
+
+                            <td>
+
+                                <span class="demand-status-good">
+                                    Good
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                🌙 Dinner
+                            </td>
+
+                            <td>
+                                430
+                            </td>
+
+                            <td>
+                                108 KG
+                            </td>
+
+                            <td>
+                                —
+                            </td>
+
+                            <td>
+                                —
+                            </td>
+
+                            <td>
+
+                                <span class="demand-status-upcoming">
+                                    Upcoming
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Historical Accuracy -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        PERFORMANCE
+                    </p>
+
+                    <h2>Prediction Accuracy</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="accuracy-grid">
+
+
+                <article class="accuracy-card">
+
+                    <span>
+                        Last 7 Days
+                    </span>
+
+                    <h3>
+                        89%
+                    </h3>
+
+                    <p class="positive">
+                        ↑ 4% improvement
+                    </p>
+
+                </article>
+
+
+                <article class="accuracy-card">
+
+                    <span>
+                        Last 30 Days
+                    </span>
+
+                    <h3>
+                        91%
+                    </h3>
+
+                    <p class="positive">
+                        ↑ 7% improvement
+                    </p>
+
+                </article>
+
+
+                <article class="accuracy-card">
+
+                    <span>
+                        Overproduction
+                    </span>
+
+                    <h3>
+                        6.2%
+                    </h3>
+
+                    <p>
+                        Current average
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Smart Insight -->
+
+        <section class="demand-insight">
+
+            <div class="demand-insight-icon">
+                💡
+            </div>
+
+            <div>
+
+                <p class="small-heading">
+                    MEALSYNC INSIGHT
+                </p>
+
+                <h2>
+                    Reduce lunch preparation by approximately 5–7 KG
+                </h2>
+
+                <p>
+                    Recent attendance and waste records indicate
+                    that lunch is consistently over-prepared.
+                    Adjusting tomorrow's preparation could reduce
+                    unnecessary waste.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MealSync Admin. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

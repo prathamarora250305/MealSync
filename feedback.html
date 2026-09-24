@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealSync - Meal Feedback</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="header-container">
+
+            <h1>MealSync</h1>
+
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="menu.html">Menu</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="activity.html">Activity</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <p class="small-heading">YOUR VOICE MATTERS</p>
+
+            <h2>Meal Feedback</h2>
+
+            <p>
+                Your feedback helps the mess understand what students
+                like and what needs improvement.
+            </p>
+
+        </section>
+
+
+        <!-- Feedback Form -->
+        <section class="feedback-form-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">TODAY'S MEAL</p>
+
+                    <h2>Share Your Experience</h2>
+
+                </div>
+
+                <span class="feedback-date">
+                    23 August 2026
+                </span>
+
+            </div>
+
+
+            <form>
+
+
+                <!-- Meal Selection -->
+
+                <div class="form-group">
+
+                    <label for="meal">
+                        Which meal are you reviewing?
+                    </label>
+
+                    <select id="meal" name="meal">
+
+                        <option value="">
+                            Select a meal
+                        </option>
+
+                        <option value="breakfast">
+                            Breakfast
+                        </option>
+
+                        <option value="lunch">
+                            Lunch
+                        </option>
+
+                        <option value="snacks">
+                            Snacks
+                        </option>
+
+                        <option value="dinner">
+                            Dinner
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Rating Grid -->
+
+                <div class="rating-section">
+
+                    <h3>Rate Your Meal</h3>
+
+                    <p class="form-description">
+                        Rate each aspect based on your actual experience.
+                    </p>
+
+
+                    <!-- Taste -->
+
+                    <div class="rating-row">
+
+                        <div>
+
+                            <h4>Taste</h4>
+
+                            <p>
+                                How did the food taste?
+                            </p>
+
+                        </div>
+
+                        <select name="taste">
+
+                            <option value="">
+                                Rating
+                            </option>
+
+                            <option value="5">
+                                5 - Excellent
+                            </option>
+
+                            <option value="4">
+                                4 - Good
+                            </option>
+
+                            <option value="3">
+                                3 - Average
+                            </option>
+
+                            <option value="2">
+                                2 - Poor
+                            </option>
+
+                            <option value="1">
+                                1 - Very Poor
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Quality -->
+
+                    <div class="rating-row">
+
+                        <div>
+
+                            <h4>Food Quality</h4>
+
+                            <p>
+                                Was the food fresh and well prepared?
+                            </p>
+
+                        </div>
+
+                        <select name="quality">
+
+                            <option value="">
+                                Rating
+                            </option>
+
+                            <option value="5">
+                                5 - Excellent
+                            </option>
+
+                            <option value="4">
+                                4 - Good
+                            </option>
+
+                            <option value="3">
+                                3 - Average
+                            </option>
+
+                            <option value="2">
+                                2 - Poor
+                            </option>
+
+                            <option value="1">
+                                1 - Very Poor
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Quantity -->
+
+                    <div class="rating-row">
+
+                        <div>
+
+                            <h4>Quantity</h4>
+
+                            <p>
+                                Was the serving quantity sufficient?
+                            </p>
+
+                        </div>
+
+                        <select name="quantity">
+
+                            <option value="">
+                                Rating
+                            </option>
+
+                            <option value="5">
+                                5 - More than enough
+                            </option>
+
+                            <option value="4">
+                                4 - Sufficient
+                            </option>
+
+                            <option value="3">
+                                3 - Average
+                            </option>
+
+                            <option value="2">
+                                2 - Less
+                            </option>
+
+                            <option value="1">
+                                1 - Very Less
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Hygiene -->
+
+                    <div class="rating-row">
+
+                        <div>
+
+                            <h4>Hygiene</h4>
+
+                            <p>
+                                How clean and hygienic was the meal area?
+                            </p>
+
+                        </div>
+
+                        <select name="hygiene">
+
+                            <option value="">
+                                Rating
+                            </option>
+
+                            <option value="5">
+                                5 - Excellent
+                            </option>
+
+                            <option value="4">
+                                4 - Good
+                            </option>
+
+                            <option value="3">
+                                3 - Average
+                            </option>
+
+                            <option value="2">
+                                2 - Poor
+                            </option>
+
+                            <option value="1">
+                                1 - Very Poor
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Overall -->
+
+                <div class="overall-rating">
+
+                    <h3>Overall Experience</h3>
+
+                    <select name="overall">
+
+                        <option value="">
+                            Select overall rating
+                        </option>
+
+                        <option value="5">
+                            ⭐⭐⭐⭐⭐ Excellent
+                        </option>
+
+                        <option value="4">
+                            ⭐⭐⭐⭐ Good
+                        </option>
+
+                        <option value="3">
+                            ⭐⭐⭐ Average
+                        </option>
+
+                        <option value="2">
+                            ⭐⭐ Poor
+                        </option>
+
+                        <option value="1">
+                            ⭐ Very Poor
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Suggestion -->
+
+                <div class="form-group">
+
+                    <label for="suggestion">
+                        What can we improve?
+                    </label>
+
+                    <textarea
+                        id="suggestion"
+                        name="suggestion"
+                        rows="6"
+                        placeholder="Tell us what you liked or what could be improved..."></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="submit-button">
+
+                    Submit Feedback
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Today's Ratings -->
+
+        <section>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        STUDENT RESPONSE
+                    </p>
+
+                    <h2>Today's Meal Ratings</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="feedback-summary">
+
+
+                <!-- Breakfast -->
+
+                <article class="feedback-card">
+
+                    <div class="feedback-card-header">
+
+                        <h3>🌅 Breakfast</h3>
+
+                        <span class="rating-badge">
+                            4.1 ★
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Most students liked the taste and freshness.
+                    </p>
+
+                    <span class="response-count">
+                        126 responses
+                    </span>
+
+                </article>
+
+
+                <!-- Lunch -->
+
+                <article class="feedback-card">
+
+                    <div class="feedback-card-header">
+
+                        <h3>☀️ Lunch</h3>
+
+                        <span class="rating-badge">
+                            4.3 ★
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Paneer was highly appreciated by students.
+                    </p>
+
+                    <span class="response-count">
+                        184 responses
+                    </span>
+
+                </article>
+
+
+                <!-- Dinner -->
+
+                <article class="feedback-card">
+
+                    <div class="feedback-card-header">
+
+                        <h3>🌙 Dinner</h3>
+
+                        <span class="rating-badge">
+                            3.8 ★
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Some students suggested improving quantity.
+                    </p>
+
+                    <span class="response-count">
+                        98 responses
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Feedback Note -->
+
+        <section class="info-box">
+
+            <div class="info-icon">
+                💡
+            </div>
+
+            <div>
+
+                <h3>Why your feedback matters</h3>
+
+                <p>
+                    MealSync uses student feedback to identify food
+                    quality trends, improve future menus and help
+                    reduce unnecessary food waste.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MealSync. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
